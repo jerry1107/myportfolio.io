@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+        html {
+            background-color: rgb(230, 230, 230);
+        }
+
+        h1,
+        h3,
+        h4,
+        p,
+        a,
+        span {
+            font-family: "Noto Sans TC", sans-serif;
+            color: #0a191e;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        h4 {
+            width: 50%;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 16px;
+            line-height: 40px;
+            font-weight: 300;
+        }
+
+        a {
+            color: #116634;
+        }
+
+        .pic {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        .pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        .information {
+            width: 100%;
+            height: 100px;
+            background-color: #668a6a;
+        }
+
+        .introductionblock {
+            border-style: solid;
+            border-width: 5px;
+            border-color: #116634;
+            width: 60%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        .myinfo {
+            margin-bottom: 5%;
+            width: 50%;
+            position: relative;
+            float: left;
+        }
+
+        .myinfo h3 {
+            font-size: 18px;
+        }
+
+        .myinfo h4 {
+            font-size: 16px;
+            margin: 0px;
+        }
+
+        .introductionblock img {
+            width: 35%;
+            height: auto;
+            position: relative;
+            margin-top: 28%;
+            margin-left: 10%;
+        }
+
+        .ability {
+            width: 60%;
+            height: auto;
+            border-style: solid;
+            border-width: 5px;
+            border-color: #116634;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .ability h1 {
+            width: 70%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .abilityflex {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .abi {
+            width: 20%;
+            height: auto;
+            text-align: center;
+        }
+
+        .abi img {
+            width: 70%;
+            height: auto;
+        }
+
+        .abi p {
+            font-size: 14px;
+            width: 70%;
+        }
+
+        .contactbar {
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            top: 20%;
+        }
+
+        .contact {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact a {
+            display: block;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .contact a img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media all and (max-width: 1024px) {
+
+            .myinfo {
+                float: none;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .introductionblock img {
+                width: 60%;
+                margin-left: 20%;
+                margin-top: 0;
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            .ability {
+                text-align: center;
+            }
+            .ability h1{
+                font-size:30px;
+            }
+            .abilityflex {
+                display: block;
+            }
+
+            .abi {
+                display: flex;
+                width: 80%;
+                margin: 20px auto 20px auto;
+            }
+
+            .abi p {
+                margin: 0px;
+            }
+
+            .abi img {
+                width: 50px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>你好！我是林傑立</h1>
+    <div class="introductionblock">
+        <div class="myinfo">
+            <h3>林傑立的小檔案</h3><br><br>
+            <span>聯絡資訊：</span><br>
+            <span>手機：0939509096</span><br>
+            <span>信箱：jerrymouse861107@gmail.com</span><br><br>
+            <h4>教育程度：</h4><br>
+            <span>國立政治大學新聞系</span><br>
+            <span>台北市立建國高級中學畢業</span><br><br>
+            <h4>獲獎記錄：</h4><br>
+            <span>2019年中國日報香港版校園學報新聞獎最佳新聞寫作季軍</span><br>
+            <span>第16屆新傳獎最佳平面新聞獎入圍</span><br>
+        </div>
+        <img src="biopic.png">
+    </div>
+    <p>我是政大新聞系的林傑立，目前在聯合新聞網新聞部擔任外稿寫手。工作之餘也會透過APP閱讀新聞接收資訊。對我來說，新聞在我的生活中不曾缺席。從小家裡就會吃早餐配著晨間新聞，到如今不論是為課堂所需也為了解社會發生的事，每天都會花一點時間關注時事。
+    </p>
+    <p>我認為我是一個對許多事抱持好奇心的人，我想這也是我當初選擇新聞系的原因，因為我認為新聞是最直接可以認識這個世界的一種媒介，透過新聞，不論是閱讀或採訪寫作，都能讓我接觸到世界上各式各樣的議題與人群，增廣見聞。</p>
+    <p>另外我也樂於跟身邊的人分享自己所見所聞，目前我有經營一個Instagram帳號，以一週為頻率分享國內外新聞及電影評論。營運超過一年，關注者也漸漸變多，不斷督促自己要多看、多寫，也練習經營社群內容。最近正好受到新冠肺炎的影響，開始在思考有什麼樣的新內容讓這個網站轉型。
+    </p>
+    <h4>見識更多數位與新聞合做的可能性</h4>
+    <p>應徵遠見數位內容部門，其實是大三就有的想法，但當時實力不夠沒有作品，因此只能忍痛放棄，但當時就對數位呈現與新聞的結合相當有興趣。真正接觸這個領域，應該是大三進入專題新聞課程、及當時與報導者接觸，有機會看到業界不同呈現形式，才發現做新聞原來有這麼多可能性，當時就希望有一天能做出這樣的報導。
+    </p>
+    <p>當時還有一個契機，是TVBS的永續報導獎來學校宣傳，以這個獎為目標，大三下學期也與組員嘗試做了一則融媒體報導《人道收容然後呢？
+        野生動物保育難題》，我們結合訪談錄音、動物生活畫面及動態圖表完成這則報導。當下完成時相當有成就感，不過現在看覺得作品仍不夠完美、成熟，因此也想再精進自己這方面的能力。</p>
+    <p>對於遠見，在面試前我的想像停留在紙本雜誌，印象中就是深度、含金量高的報導型雜誌。不過在看到幾則不同面向的專題報導，我發現遠見的報導顛覆我的想像，包括近期的新冠肺炎追蹤、《請問總統2020》、及多則高教題材等，透過數位的呈現都有別於以往紙本，因此非常希望能到遠見學習。
+    </p>
+    <h4>為架設「影評網站」而設立的選課目標</h4>
+    <p>大學讀的是「傳播學院大一二不分系」，入學時對未來還很茫然，只有一個很明確的短期目標—，我想架設一個屬於自己的影評網站，這是一項在高中培養出來的興趣，而我想要有一個屬於自己的空間，可以刊登自己寫的東西。所以當時的修課選擇，一是修與新聞、寫作相關的課程，二是，所以也會修與電影、程式設計相關的課程。
+    </p>
+    <p>網路上雖然有許多現成的網站模組工具，但多半都有固定的格式，可更動的彈性不高，因此才想學著建立網站。雖然學到現在了解到架設一個完全屬於自己的網站背後有些需要金錢與更高階技術的部份還辦不到，不過至少這個目標讓我在大學四年間，學會看懂程式碼，了解數位工具運作的邏輯。
+    </p>
+    <p>為了學習新聞、評論的寫作，大三分流時選擇了新聞系，並經歷大學報的洗禮。大學報帶給我豐富的採訪經驗，在跑報的過程中接觸到許多優秀的人及團體，看到他們的夢想如何實現、如何幫助社會、或是他們遇到什麼難處。我發現我有能力將這些人的故事傳達出去，讓更多人知道，這讓我產生一種使命感，讓更多人聽到這世界不同的聲音。
+    </p>
+    <p>這四年間我學會的數位工具包括Html靜態網頁製作、基本Python與簡易爬蟲，Adobe的工具則包括AI、PS、Id、Ae等都是在這四年間透過課程或自學學習的。而我也將這些能力運用在營隊宣傳、社團刊物編排，就連現在自己經營的IG帳號，上頭的圖也都是我自己設計製作的。
+    </p>
+    <p>大學剩下最後一個學期，許多人可能減少大學課程，開始到社會求職，而我選擇半工半讀，在學校繼續修習傳播學課程，並增進自己的外語能力，現在除了英文外，也會一點德文及日語，讓自己未來可以從容面對這個多變且需要多元能力的社會。</p>
+    <div class="ability">
+        <h1>相關技能</h1>
+        <h3>新聞相關</h3>
+        <div class="abilityflex">
+            <div class="abi">
+                <img src="writeion.png">
+                <p>新聞採訪寫作</p>
+            </div>
+            <div class="abi">
+                <img src="edition.png">
+                <p>版面編輯</p>
+            </div>
+            <div class="abi">
+                <img src="photoion.png">
+                <p>新聞攝影</p>
+            </div>
+        </div>
+        <h3>設計相關</h3>
+        <div class="abilityflex">
+            <div class="abi">
+                <img src="idion.png">
+                <p>Indesign</p>
+            </div>
+            <div class="abi">
+                <img src="aiion.png">
+                <p>Illustrator</p>
+            </div>
+            <div class="abi">
+                <img src="psion.png">
+                <p>Photoshop</p>
+            </div>
+            <div class="abi">
+                <img src="lrion.png">
+                <p>Lightroom</p>
+            </div>
+        </div>
+        <h3>影片剪輯</h3>
+        <div class="abilityflex">
+            <div class="abi">
+                <img src="ediusion.png">
+                <p>Edius</p>
+            </div>
+            <div class="abi">
+                <img src="aeion.png">
+                <p>After effect</p>
+            </div>
+            <div class="abi">
+                <img src="prion.png">
+                <p>Premiere</p>
+            </div>
+        </div>
+        <h3>程式設計</h3>
+        <div class="abilityflex">
+            <div class="abi">
+                <img src="html5ion.png">
+                <p>Html5</p>
+            </div>
+            <div class="abi">
+                <img src="pyion.png">
+                <p>基礎Python爬蟲</p>
+            </div>
+        </div>
+        <h3>語言能力</h3>
+        <div class="abilityflex">
+            <div class="abi">
+                <img src="engion.png">
+                <p>英文－精熟</p>
+            </div>
+            <div class="abi">
+                <img src="deuion.png">
+                <p>德文－基礎</p>
+            </div>
+            <div class="abi">
+                <img src="japion.png">
+                <p>日文－基礎</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <h4>在udn見證2020大選</h4>
+    <p>同樣是大三，大家都開始到處尋覓實習或打工，而我也認為該是時候到業界學習，因此也投履歷到幾家公司，幾經輾轉最後在聯合新聞網工讀，負責上稿及寫新聞稿，由於不用採訪，因此這份工作帶給我的多半是對流量、閱聽眾的觀察跟使用網路上的一些圖表工具。
+    </p>
+    <p>比較特別的經驗是，我在udn工作的期間碰上2020大選，當時處理很多選戰稿，特別是<a href="https://udn.com/news/story/7548/4217289"
+            target="_blank">蔣萬安及吳怡農的「雙帥對決」</a>，幾乎每次進公司都會處理兩人最新的民調比較。這個經驗讓我觀察到媒體與閱聽眾間的關係是多麼密切，當時這兩個人應該是全台最為關注的對決組合，也因此公司就不斷推出最新戰況，以及台灣人的選舉狂熱。
+    </p>
+    <h4>未來的規劃</h4>
+    <p>我最終極的目標，是希望未來能成為新聞編輯，而在之前與報導者合作辦營隊時，總編輯李雪莉老師說了一句：「要想當好編輯最好先從記者做起。」我覺得相當有道理，因為知道從記者開始磨練寫功，也才能更知道什麼樣的新聞是好新聞。因此畢業後我想先當記者可能一到兩年的時間，在外跑新聞磨練磨練，為未來成為更好的新聞人做準備。
+    </p>
+    <div class="information">
+        <div class="contactbar">
+            <div class="contact">
+                <a href="index.html">
+                    <img src="FBion.png">
+                </a>
+            </div>
+            <div class="contact">
+                <a href="https://www.facebook.com/profile.php?id=100002548820281" target="_blank">
+                    <img src="FBion.png">
+                </a>
+            </div>
+            <div class="contact">
+                <a href="https://www.instagram.com/je_site_7011/" target="_blank">
+                    <img src="IGion.png">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
