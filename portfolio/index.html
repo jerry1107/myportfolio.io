@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+        h1,
+        h2,
+        h3,
+        p {
+            font-family: "Noto Sans TC", sans-serif;
+            color: #0a191e;
+        }
+
+        .introduction {
+            width: 100%;
+            height: auto;
+            background-color: rgb(230, 230, 230);
+        }
+
+        .introduction img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .welcome {
+            position: absolute;
+            top: calc(198/600*100%);
+            text-align: right;
+            right: calc(215/1440*100%);
+        }
+
+        .welcome h1,
+        .welcome h2 {
+            color: #ccb071;
+        }
+
+        .experience {
+            width: 100%;
+            height: 1000px;
+            background-color: #a3a888;
+            margin-top: 0px;
+        }
+
+        .experience h1 {
+            width: calc(399/1440*100%);
+            height: calc(75/1000*100%);
+            position: relative;
+            text-align: center;
+            top: calc(83/1000*100%);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .timeline {
+            width: 100vw;
+            height: calc(159/1000*100%);
+            top: calc(70/1000*100%);
+            position: relative;
+        }
+
+        .myline {
+            width: calc(800/1440*100%);
+            height: 5px;
+            position: relative;
+            top: calc(55/159*100%);
+            background-color: #116634;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .timeinfo {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: -15px;
+        }
+
+        .timespot {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border-color: #116634;
+            border-width: 5px;
+            border-style: solid;
+            position: relative;
+        }
+
+        .timeinfo h4 {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bs-example {
+            height: calc(600/1000*100%);
+            position: relative;
+            top: calc(90/1000*100%);
+        }
+
+        .carousel {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .pbutton {
+            width: 50px;
+            height: 50px;
+            margin-top: 10%;
+            margin-left: 3%;
+        }
+
+        .pbutton img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nbutton {
+            width: 50px;
+            height: 50px;
+            margin-top: 10%;
+            margin-right: 3%;
+        }
+
+        .nbutton img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .item {
+            background: #fbfdf0;
+            text-align: center;
+            width: 90%;
+            height: calc(550/600*100%);
+            top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: none;
+            font-family: "Noto Sans TC", sans-serif;
+            box-shadow: 15px 15px 10px #8b916e;
+
+        }
+
+        .item h2 {
+            margin-top: 0px;
+        }
+
+        .infobar {
+            width: calc(600/800*100%);
+            height: 30%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            justify-content: space-between;
+            top: 10%;
+            margin-bottom: 30px;
+        }
+
+        .infobar img {
+            width: auto;
+            height: 100%;
+            display: block;
+            text-align: center;
+            ;
+        }
+
+        .infoword {
+            text-align: right;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .infoword h3 {
+            color: slategray;
+            margin: 0px;
+        }
+
+        .item p {
+            position: relative;
+            width: 75%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+            top: calc(120/600*100%);
+            font-size: 16px;
+        }
+
+        .portfolio {
+            width: 100%;
+            height: auto;
+            background-color: #a3a888;
+
+        }
+
+        .container {
+            position: relative;
+            top: 5%;
+            left: 5%;
+            width: 80%;
+            height: 700px;
+            margin: 0;
+        }
+
+        .biography {
+            width: 400px;
+            height: 650px;
+            background-color: #7a5a41;
+            position: absolute;
+            top: 0px;
+            overflow: hidden
+        }
+
+        .biography a {
+            margin-top: 0px;
+            font-family: "Noto Sans TC", sans-serif;
+            font-size: 80px;
+            font-weight: 500;
+            color: #ccb071;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+        }
+
+        .biography img {
+            height: 70%;
+            position: absolute;
+            right: -10px;
+            bottom: 0px;
+
+        }
+
+        .workcontainer {
+            width: 800px;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 0px;
+            left: 500px;
+        }
+
+        .work {
+            width: 200px;
+            height: 250px;
+            background-color: #ac7027;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .workpic {
+            width: 180px;
+            height: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        }
+
+        .workpic img {
+            width: 80%;
+            height: auto;
+        }
+
+        .workword {
+            margin-top: 0px;
+            font-family: "Noto Sans TC", sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: #0a191e;
+        }
+
+        .workword a {
+            color: #0a191e;
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        .information {
+            width: 100%;
+            height: 100px;
+            background-color: #668a6a;
+        }
+
+        .contactbar {
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            top: 20%;
+        }
+
+        .contact {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact a {
+            display: block;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .contact a img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .work:hover {
+            height: 500px;
+            width: 300px;
+        }
+
+        @media all and (max-width:1440px) {
+            .workcontainer {
+                width: 500px;
+                height: 650px;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .work {
+                width: 200px;
+                height: 200px;
+            }
+
+            .work:hover {
+                height: 200px;
+                width: 450px;
+            }
+
+            .workpic {
+                float: left;
+            }
+
+            .workword {
+                margin-left: 200px;
+                margin-top: 10px;
+            }
+        }
+
+        @media all and (max-width:1024px) {
+            .container {
+                height: auto;
+                top: 0;
+                left: 0;
+                padding: 0px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .biography {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+            }
+
+            .biography img {
+                height: 90%;
+            }
+
+            .workcontainer {
+                position: relative;
+                left: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+            }
+
+            .work {
+                width: 500px;
+            }
+
+            .work:hover {
+                width: 500px;
+            }
+        }
+
+        @media all and (max-width: 720px) {
+            .introduction {
+                overflow-x: hidden;
+                height: 600px;
+            }
+
+            .introduction img {
+                height: 100%;
+                width: auto;
+            }
+
+            .welcome {
+                text-align: center;
+            }
+
+            .timeline,
+            .timeinfo,
+            .timeinfo h4 .timespot {
+                display: none;
+            }
+
+            .pbutton {
+                width: 50px;
+                height: 50px;
+                margin-top: 50%;
+                margin-right: 3%;
+                margin-left: 0;
+            }
+
+            .nbutton {
+                width: 50px;
+                height: 50px;
+                margin-top: 50%;
+                margin-right: 0;
+                margin-left: 3%
+            }
+
+            .item {
+                height: auto;
+                width: 100%;
+            }
+
+            .item p {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            .infobar {
+                display: block;
+                margin-top: 30px;
+            }
+
+            .infobar img {
+                width: 60%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .infoword {
+                width: 100%;
+                text-align: center;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .workcontainer {
+                width: 90%;
+                margin-bottom: 50px;
+            }
+
+            .work {
+                width: 100%;
+            }
+
+            .work:hover {
+                width: 100%;
+            }
+
+            .workword a {
+                font-size: 16px;
+            }
+        }
+
+        @media all and (max-width:500px) {
+            .introduction img {
+                position: absolute;
+                left: -40%;
+            }
+
+            .experience h1 {
+                width: 75%;
+            }
+
+            .bs-example {
+                height: auto;
+            }
+
+            .carousel-inner {
+                overflow: visible;
+            }
+
+            .item p {
+                margin-top: 30px;
+                width: 85%;
+            }
+
+            .workcontainer {
+                display: block;
+                height: auto;
+            }
+
+            .work {
+                height: auto;
+                margin-bottom: 50px;
+            }
+
+            .work:hover {
+                height: auto;
+            }
+
+            .workpic {
+                float: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .workword {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+    <title>傑立的履歷</title>
+</head>
+<body>
+    <div class="introduction">
+        <img src="selfie.jpg">
+        <div class="welcome">
+            <h1>你好！</h1>
+            <h2>我是林傑立</h2>
+            <h2>目前就讀政大新聞系四年級</h2>
+        </div>
+    </div>
+    <div class="experience">
+        <h1>我的相關經歷</h1>
+        <div class="timeline">
+            <div class="myline">
+                <div class="timeinfo">
+                    <div class="timespot slide-one"></div>
+                    <h4>2017.05</h4>
+                </div>
+                <div class="timeinfo">
+                    <div class="timespot slide-two"></div>
+                    <h4>2017.07</h4>
+                </div>
+                <div class="timeinfo">
+                    <div class="timespot slide-three"></div>
+                    <h4>2017.09</h4>
+                </div>
+                <div class="timeinfo">
+                    <div class="timespot slide-four"></div>
+                    <h4>2018.09</h4>
+                </div>
+                <div class="timeinfo">
+                    <div class="timespot slide-five"></div>
+                    <h4>2019.07</h4>
+                </div>
+                <div class="timeinfo">
+                    <div class="timespot slide-six"></div>
+                    <h4>2019.09</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bs-example">
+            <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                <div class="pbutton prev-slide">
+                    <img src="prebutton.png">
+                </div>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <div class="infobar">
+                            <img src="ITlab.png">
+                            <div class="infoword">
+                                <h2>數位平台實習助理</h2>
+                                <h3>2017.05</h3>
+                            </div>
+                        </div>
+                        <p>數位平台為政大傳播學院五個實習單位之一，學習數位設計相關內容，包括Photoshop、Illustrator、Indesign等平面設計軟體，與設計實務相關內容。
+                            <br><br>數位平台是我學習平面設計的一個起點，在新聞媒體走向網路的時代，能夠學會利用這些軟體製作出內容變得相當重要，而在數位平台學習，也讓我學會使用AI、PS，及基礎的html5及After
+                            effect動畫，幫助我日後活動時可以幫忙製作製圖及文宣。
+
+                        </p>
+
+                    </div>
+                    <div class="item">
+                        <div class="infobar">
+                            <img src="insight.jpg">
+                            <div class="infoword">
+                                <h2>第22屆政大新聞營總召集人</h2>
+                                <h3>2017.07</h3>
+                            </div>
+                        </div>
+                        <p>政大新聞系每年會舉辦新聞營，透過專業的教師指導高中生們新聞寫作，並邀請業界有名的記者或報社團體進行演講，更帶他們到電視台參訪認識新聞產業。
+                            <br><br>政大新聞營的經歷，更加強化責任感與領導能力，因為所帶領的人不只是自己的同儕與學弟妹，還包含全台各地的高中生們，因此要顧及一個上百人的團體，是需要一定的專注力與清楚的思緒。
+
+                        </p>
+
+                    </div>
+                    <div class="item">
+                        <div class="infobar">
+                            <img src="VOS.jpg">
+                            <div class="infoword">
+                                <h2>政大學聲攝影記者、編輯</h2>
+                                <h3>2017.09</h3>
+                            </div>
+                        </div>
+                        <p>政大學聲為政治大學學生會底下的校內媒體，內容報導與政大學生相關的校園議題及文化、人物專體，在學校各處供學生索取。
+                            <br><br>剛進入時為攝影記者，大二下學期轉職為編輯，編排<a href="https://issuu.com/nccuvos/docs/nccuvos23>"
+                                target="_blank">23期教學助理專題</a>及<a href="https://issuu.com/nccuvos/docs/nccuvos24"
+                                target="_blank">第24期周行一校長任內爭議專題</a>，因兩者皆是硬性專題，因此整理資訊製成圖表是當時比較重要的工作內容。也在這時學習到雜誌排辦的相關技巧，與資訊圖表在呈現上的巧思。
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="infobar">
+                            <img src="unews.jpg">
+                            <div class="infoword">
+                                <h2>大學報實習記者、編輯</h2>
+                                <h3>2018.09</h3>
+                            </div>
+                        </div>
+                        <p>大學報為傳院不分系學生分流至新聞系的必修課程，讓學生在一個學期時間，學習新聞採訪、寫作、平面新聞排版及影音內容製作新聞
+                            <br><br>在大學報擔任的是藝文、新知版記者，報導內容為大學生間的藝文活動，及大學生參與的新知識新發明等新事物。採訪足跡從宜蘭縣到高雄市都有，議題內容跨足性別、環保、文化保存等多個領域。可以說是大學生活相當充實的一段時光。
+
+
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="infobar">
+                            <img src="udn.jpg">
+                            <div class="infoword">
+                                <h2>udn聯合新聞網新聞部工讀生</h2>
+                                <h3>2019.07</h3>
+                            </div>
+                        </div>
+                        <p>大三暑假在聯合新聞網udn擔任新聞部工讀生，負責外稿上稿、新聞稿改寫的工作。在這段工作期間雖然沒有採訪經驗，但可以近距離觀察話題趨勢，與業界工作的狀態。
+                            <br><br>幸運的是，在我工作的這段期間，剛好碰上2020總統大選最白熱化的階段，從柯文哲組黨到最終投票結果出爐，我在udn見證了民眾與媒體的狂熱。幾乎每次工作都會處理一到兩篇的政治分析稿，這也提起我對政治新聞的興趣，這學期也修習政治傳播課程。
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="infobar">
+                            <img src="unews.jpg">
+                            <div class="infoword">
+                                <h2>大學報編輯主任</h2>
+                                <h3>2019.09</h3>
+                            </div>
+                        </div>
+                        <p>因為希望將大三跑大學報的經驗傳承給學弟妹，所以大四決定回到大學報擔任編輯主任，主要負責大學報紙本版面編輯。並將學弟妹的作品刊登在Issuu上。
+                            <br><br>這一屆經歷香港反送中與2020大選。<a href="https://issuu.com/uonline/docs/1708___f_-___" target="_blank">反送中報導</a>是大學報第一次嘗試了全版壓色，去呈現香港的大學生與警方對峙黑暗時刻。<a href="https://issuu.com/uonline/docs/1717___f_-___" target="_blank">選舉專題</a>則嘗試在頭版放上全版候選人的青年政策比較表格，並出增版呈現青年對大選的看法，這些是我擔任編主時幾次比較特別的嘗試。
+                        </p>
+                    </div>
+                </div>
+                <div class="nbutton next-slide">
+                    <img src="nextbutton.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <h1 style="position: relative; width:40%; margin:0 auto 50px auto; text-align: center; ">自傳與作品</h1>
+        <div class="container">
+            <div class="biography">
+                <a href="biography.html" target="_blank">自<br>傳</a>
+                <img src="biolongselfie.png">
+            </div>
+            <div class="workcontainer">
+                <div class="work">
+                    <div class="workpic">
+                        <img src="lionion.png">
+                    </div>
+                    <div class='workword'>
+                        融媒體專題<br><br>
+                        <a href="https://jerry41008.wixsite.com/animalshelter" target="_blank">人道收容然後呢？<br>野生動物保育難題</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="workpic">
+                        <img src="doion.png">
+                    </div>
+                    <div class='workword'>
+                        專題新聞<br><br>
+                        <a href="journal.html" target="_blank">醫師過勞止痛錠<br>勞基法與醫療法何為良藥</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="workpic">
+                        <img src="fanion.png">
+                    </div>
+                    <div class='workword'>
+                        純淨新聞<br><br>
+                        <a href="news.html" target="_blank">劇團經費遭刪恐解散<br>蘭陽歌仔文化難傳承</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="information">
+        <div class="contactbar">
+            <div class="contact">
+                <a href="index.html">
+                    <img src="Houseion.png">
+                </a>
+            </div>
+            <div class="contact">
+                <a href="https://www.facebook.com/profile.php?id=100002548820281" target="_blank">
+                    <img src="FBion.png">
+                </a>
+            </div>
+            <div class="contact">
+                <a href="https://www.instagram.com/je_site_7011/" target="_blank">
+                    <img src="IGion.png">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+</body>
+<footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Cycles to the previous item
+            $(".prev-slide").click(function () {
+                $("#myCarousel").carousel("prev");
+            });
+            // Cycles to the next item
+            $(".next-slide").click(function () {
+                $("#myCarousel").carousel("next");
+            });
+            // Cycles the carousel to a particular frame 
+            $(".slide-one").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".slide-two").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".slide-three").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+            $(".slide-four").click(function () {
+                $("#myCarousel").carousel(3);
+            });
+            $(".slide-five").click(function () {
+                $("#myCarousel").carousel(4);
+            });
+            $(".slide-six").click(function () {
+                $("#myCarousel").carousel(5);
+            });
+        });
+    </script>
+</footer>
+
+</html>
