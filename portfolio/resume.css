@@ -61,7 +61,6 @@ p,ul {
 
 
 .introbox1 {
-    background-image: url("selfie .jpg");
     color: #fff;
     text-shadow: 2px 1px 1px #575353;
     font-weight: bold;
@@ -384,9 +383,6 @@ p,ul {
     box-shadow: 10px 10px 10px #8b916e;
 }
 
-.introbox2 {
-    background-image: url("ME111.jpg");
-}
 .introbox2::before{
         content: ' ';
         position: fixed;
@@ -517,9 +513,7 @@ li{
 .bigabiflex h3:hover{
     box-shadow: 3px 3px 3px #575353;
 }
-.introbox3{
-    background-image: url("ME222.jpg");
-}
+
 .introbox3::before{
         content: ' ';
         position: fixed;
