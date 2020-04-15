@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="buttonlist.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(219, 219, 219)
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #ccb071;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #ac7027;
+        }
+
+        html {
+            background-color: rgb(230, 230, 230);
+        }
+
+        body {
+            margin: 0px;
+            height: auto;
+        }
+
+        h1,
+        h4,
+        p,
+        a {
+            font-family: "Noto Sans TC", sans-serif;
+            color: #0a191e;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        h4 {
+            width: 50%;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 16px;
+            line-height: 40px;
+            font-weight: 300;
+        }
+
+        .pic {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        .pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        .information {
+            width: 100%;
+            height: 100px;
+            background-color: #668a6a;
+        }
+
+        .contactbar {
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            top: 20%;
+        }
+
+        .contact {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact a {
+            display: block;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .contact a img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>一個大三就有的想法</h1>
+    <p>我想申請的職能類別是數位內容，這是大三就有的想法，但當時實力不夠沒有作品，因此只能忍痛放棄</p>
+    <h4>一場比賽　看到新聞的不同可能</h4>
+    <p>真正接觸數位的領域，應該是大三進入專題新聞課程、及當時與報導者接觸，有機會看到業界不同呈現形式，才發現做新聞原來有這麼多可能性，當時就希望有一天能做出這樣的報導。</p>
+    <p>再加上碰上TVBS的永續報導獎來學校宣傳，以這個獎為目標，大三下學期也與組員嘗試做了一則融媒體報導《人道收容然後呢？
+        野生動物保育難題》，我們結合訪談錄音、動物生活畫面及動態圖表完成這則報導。當下完成時相當有成就感，不過現在看覺得作品仍不夠完美、成熟，因此知道自己若真的有興趣，想做出像業界一樣的作品，就必須精進自己這方面的能力。
+    </p>
+    <h4>遠見跟過去參與的媒體不同之處</h4>
+    <p>我過去參與製作的媒體包括大學報及政大學聲，主要是以紙本為主，內容也主要圍繞在大學生，所以當時報導的思維就都比較傳統，以文字為導向來製作。像是編輯大學報或學聲刊物，也都以文字讀起來舒適為第一優先，內容也都比較雕琢文字，對於圖像可能是行有餘力時才會多花點時間思考安排。
+    </p>
+    <div style="height:auto; width:50%; margin:0 auto;">
+        <a style="display:block; width:100%; height:auto; border-style: solid; border-color: #116431; margin:0 auto;  text-align: center;"
+            href="javascript:showiframe()" id="openframe">點我看過去作品
+            <div style=" display: none; width:100%; padding-top:50px;height:auto;" id="hideframe"><iframe src="unews1688.pdf"
+                    width="100%" height="480px"></iframe>
+            </div>
+        </a></div>
+
+    <p> 而遠見想當然在內容方面一定比校園媒體更深入，議題類型也更加廣泛。再看過幾篇數位專題，包括近期的新冠肺炎追蹤、《請問總統2020》、及多則高教題材等，看到以圖像、表格為主角，文字做輔助說明的呈現方式，以及與讀者互動的介面設計，閱讀上與製作上的邏輯都與我製作過的媒體截然不同，這也是我非常希望能到遠見學習的原因。
+    </p>
+
+    <div class="information">
+        <div class="contactbar">
+            <div class="contact">
+                <a href="resume.html">
+                    <img src="Houseion.png">
+                </a>
+            </div>
+            <div class="contact">
+                <a href="https://www.facebook.com/profile.php?id=100002548820281" target="_blank">
+                    <img src="FBion.png">
+                </a>
+            </div>
+            <div class="contact">
+                <a href="https://www.instagram.com/je_site_7011/" target="_blank">
+                    <img src="IGion.png">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
