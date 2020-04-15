@@ -1,0 +1,732 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(219, 219, 219)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccb071;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ac7027;
+}
+
+h1,
+h2,
+h3,
+p,ul {
+    font-family: "Noto Sans TC", sans-serif;
+    color: #0a191e;
+}
+
+.introduction {
+    height: 1000px;
+    width: 100%;
+}
+
+.article1,
+.article2,.article3 {
+    width: 100%;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 40px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    line-height: 28px;
+}
+
+.article2,.article3 {
+    background-position: center center;
+}
+
+
+.introbox1 {
+    background-image: url("selfie .jpg");
+    color: #fff;
+    text-shadow: 2px 1px 1px #575353;
+    font-weight: bold;
+}
+
+.welcome {
+    position: absolute;
+    top: calc(198/600*100%);
+    text-align: right;
+    right: calc(215/1440*100%);
+}
+
+.welcome h1,
+.welcome h2 {
+    color: #ccb071;
+}
+
+.welcome a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    margin: 50px auto;
+}
+
+.linkbutton {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #ccb071;
+    background-color: #ac7027;
+    box-shadow: 2px 1px 3px #575353;
+    text-shadow: none;
+    text-align: center;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #0a191e;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.experience {
+    width: 100%;
+    height: 1000px;
+    background-color: #a3a888;
+    margin-top: 0px;
+}
+
+.experience h1 {
+    width: calc(399/1440*100%);
+    height: calc(75/1000*100%);
+    position: relative;
+    text-align: center;
+    top: calc(83/1000*100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.timeline {
+    width: 100vw;
+    height: calc(159/1000*100%);
+    top: calc(70/1000*100%);
+    position: relative;
+}
+
+.myline {
+    width: 80%;
+    height: 5px;
+    position: relative;
+    top: calc(55/159*100%);
+    background-color: #77d196;
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 1;
+}
+
+.spotflexbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+.mylinecolor {
+    width: 0%;
+    height: 5px;
+    position: relative;
+    top: 0;
+    background-color: rgb(3, 56, 5);
+    margin: 0;
+    z-index: 1;
+}
+
+.timeinfo {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -15px;
+    z-index: 6;
+}
+
+.timespot {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-color: #77d19d;
+    border-width: 5px;
+    border-style: solid;
+    position: relative;
+
+}
+
+.timeinfo h4 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bs-example {
+    height: calc(600/1000*100%);
+    position: relative;
+    top: calc(90/1000*100%);
+}
+
+.carousel {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.pbutton {
+    width: 50px;
+    height: 50px;
+    margin-top: 10%;
+    margin-left: 3%;
+    display: none;
+}
+
+.pbutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.nbutton {
+    width: 50px;
+    height: 50px;
+    margin-top: 10%;
+    margin-right: 3%;
+    display: none;
+}
+
+.nbutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    background: #fbfdf0;
+    text-align: center;
+    width: 80%;
+    height: calc(550/600*100%);
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: none;
+    font-family: "Noto Sans TC", sans-serif;
+    box-shadow: 15px 15px 10px #8b916e;
+
+}
+
+.item h2 {
+    margin-top: 0px;
+}
+
+.infobar {
+    width: calc(600/800*100%);
+    height: 30%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    justify-content: space-between;
+    top: 10%;
+    margin-bottom: 30px;
+}
+
+.infobar img {
+    width: auto;
+    height: 100%;
+    display: block;
+    text-align: center;
+    ;
+}
+
+.infoword {
+    text-align: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoword h3 {
+    color: slategray;
+    margin: 0px;
+}
+
+.item p {
+    padding-top: 10%;
+    width: 75%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.portfolio {
+    width: 100%;
+    height: 650px;
+    background-color: #a3a888;
+    padding-bottom: 25px;
+
+}
+
+.workcontainer {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px auto 0 auto;
+}
+
+.work {
+    width: 200px;
+    height: 250px;
+    background-color: #ac7027;
+    text-align: center;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ccb071;
+}
+
+.workpic {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.workpic img {
+    width: 80%;
+    height: auto;
+}
+
+.workword {
+    margin-top: 0px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #0a191e;
+}
+
+.workword p {
+    color: #0a191e;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.information {
+    width: 100%;
+    height: 100px;
+    background-color: #668a6a;
+}
+
+.contactbar {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+}
+
+.contact {
+    width: 50px;
+    height: 50px;
+}
+
+.contact a {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact a img {
+    width: 100%;
+    height: auto;
+
+}
+
+.work:hover {
+    height: 400px;
+    width: 300px;
+    box-shadow: 10px 10px 10px #8b916e;
+}
+
+.introbox2 {
+    background-image: url("ME111.jpg");
+}
+
+.wantedintro {
+    width: 50%;
+    height: auto;
+    background-color: #fbfdf0;
+    box-shadow: 2px 1px 5px #575353;
+    margin-top: 20%;
+    padding-bottom: 30px;
+    opacity: 80%;
+
+}
+
+.wantedintro h2 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #0a191e;
+}
+
+.wantedintro p {
+    width: 70%;
+    margin: 50px auto 0px auto;
+    padding-bottom: 50px;
+    font-size: 16px;
+    color: #0a191e;
+    font-weight: 300;
+}
+
+.wantedintro ul{
+    width: 70%;
+    padding-bottom:10px;
+    font-size: 16px;
+    color: #575353;
+    margin:0px auto;
+    padding-left:20px;
+}
+li{
+    padding-bottom: 10px;
+}
+
+.wantedintro a {
+    display: block;
+    width: 150px;
+
+}
+
+.wantedintro .linkbutton {
+    background-color: #fbfdf0;
+    margin: 0px;
+    margin: 0px auto;
+}
+
+.ability{
+    background-color: #a3a888;
+    width:100%;
+    height:auto;
+    padding-bottom:50px;
+    padding-top:50px;
+}
+
+.ability h1{
+    width:60%;
+    text-align: center;
+    margin:0px auto 50px auto;
+}
+
+.abilitybox{
+    width:70%;
+    height:auto;
+    margin:0px auto;
+    border-top-style:solid;
+    border-bottom-style: solid;
+    border-color: #31804b;
+    border-width:3px;
+    padding:20px;
+}
+.bigabiflex{
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-bottom:50px;
+    border-color: #31804b;
+    border-style: solid;
+    border-width:2px;
+}
+.bigabiflex a{
+    text-decoration: none;
+}
+.bigabiflex h3{
+    background-color: #31804b;
+    margin:0px;
+    padding:5px 0px;
+}
+.abiflex{
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+    flex-wrap: wrap;
+}
+.abilitybox h2{
+    width:100%;
+    text-align: center;
+    margin:0 auto 30px auto;
+}
+
+#abihide1,#abihide2,#abihide3,#abihide4,#abihide5{
+    display: none;
+}
+.abi{
+    width:18%;
+    height:auto;
+}
+.abi img{
+    width:55%;
+    height:auto;
+}
+.bigabiflex h3:hover{
+    box-shadow: 3px 3px 3px #575353;
+}
+.introbox3{
+    background-image: url("ME222.jpg");
+}
+
+@media all and (max-width:1440px) {
+    .workcontainer {
+        justify-content: space-between;
+    }
+
+    .work {
+        width: 200px;
+        height: 200px;
+    }
+
+
+}
+
+@media all and (max-width:1024px) {
+    .container {
+        height: auto;
+        top: 0;
+        left: 0;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .workcontainer {
+        position: relative;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .work {
+        width: 200px;
+    }
+
+    .work:hover {
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 720px) {
+
+    .welcome {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .experience {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .experience h1 {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+
+
+    .timeline,
+    .timeinfo,
+    .timeinfo h4 .timespot {
+        display: none;
+    }
+
+    .pbutton {
+        width: 50px;
+        height: 50px;
+        margin-top: 30%;
+        margin-right: 3%;
+        margin-left: 0;
+        display: block;
+    }
+
+    .nbutton {
+        width: 50px;
+        height: 50px;
+        margin-top: 30%;
+        margin-right: 0;
+        margin-left: 3%;
+        display:block;
+    }
+
+    .item {
+        height: 400px;
+        width: 100%;
+        padding: 5px;
+        scroll-behavior: smooth;
+        overflow: scroll;
+
+    }
+
+    .item p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .infobar {
+        display: block;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .infobar img {
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoword {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio {
+        height: auto;
+    }
+
+    .workcontainer {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .work {
+        width: 200px;
+        height: 200px;
+    }
+
+    .work:hover {
+        width: 200px;
+        height: 250px;
+    }
+
+    .workpic {
+        float: left;
+    }
+
+    .workword a {
+        font-size: 16px;
+    }
+
+    .introbox2 {
+        padding: 20px;
+    }
+
+    .wantedintro {
+        width: 100%;
+        margin: 40% auto 0 auto;
+    }
+    .wantedintro h2{
+        font-size:28px;
+    }
+
+    .wantedintro p {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media all and (max-width:500px) {
+    .article {
+        background-position: -250px 0px;
+    }
+
+    .experience h1 {
+        width: 75%;
+    }
+
+    .bs-example {
+        height: auto;
+    }
+
+    .carousel-inner {
+        overflow: visible;
+    }
+    .infobar img{
+        width:90%;
+    }
+    .infobar h3{
+        font-size:18px;
+    }
+    .infobar h2{
+        font-size:24px;
+    }
+
+    .item p {
+        margin-top: 40px;
+        width: 85%;
+        font-size:14px;
+    }
+
+    .workcontainer {
+        display: block;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .work {
+        width: 70%;
+        height: auto;
+        margin: 30px auto 0 auto;
+    }
+
+    .work:hover {
+        width: 70%;
+        height: auto;
+    }
+
+    .workpic {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .workword {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ability h1{
+        width:80%;
+    }
+    .abi{
+        width:50%;
+    }
+    
+}
