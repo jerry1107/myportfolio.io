@@ -286,7 +286,7 @@ p,ul {
 
 .portfolio {
     width: 100%;
-    height: 650px;
+    height: auto;
     background-color: #a3a888;
     padding-bottom: 25px;
 
