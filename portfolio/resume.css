@@ -541,6 +541,9 @@ li{
 }
 
 @media all and (max-width: 720px) {
+    .welcome{
+       width:100%;
+    }
     .experience {
         height: auto;
         padding-top: 100px;
@@ -656,9 +659,7 @@ li{
 }
 
 @media all and (max-width:500px) {
-    .welcome{
-       width:100%;
-    }
+    
     .article {
         background-position: -250px 0px;
     }
