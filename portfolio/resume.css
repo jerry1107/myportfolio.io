@@ -545,7 +545,7 @@ li{
         position: relative;
         margin-top: calc(198/600*100%);
         text-align: center;
-        width:100%
+        width:100%;
     }
     .experience {
         height: auto;
