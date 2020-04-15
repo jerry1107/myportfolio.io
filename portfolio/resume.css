@@ -672,7 +672,7 @@ li{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: auto 1000px;
-    background-position: center center;
+    background-position: top center;
     line-height: 28px;
 }
 
