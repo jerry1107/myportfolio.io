@@ -663,6 +663,10 @@ li{
 }
 
 @media all and (max-width:500px) {
+    .welcome{
+        margin-left:auto;
+        margin-right:auto;
+    }
     .article {
         background-position: -250px 0px;
     }
