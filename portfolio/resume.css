@@ -542,7 +542,10 @@ li{
 
 @media all and (max-width: 720px) {
     .welcome{
-       width:100%;
+        position: relative;
+        margin-top: calc(198/600*100%);
+        text-align: center;
+        width:100%
     }
     .experience {
         height: auto;
