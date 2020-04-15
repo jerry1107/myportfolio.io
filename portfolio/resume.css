@@ -541,12 +541,19 @@ li{
 }
 
 @media all and (max-width: 720px) {
-    .welcome{
+   .welcome {
         position: relative;
-        margin-top: calc(198/600*100%);
+        top: 20%;
         text-align: center;
         width:100%;
+        right:0px;
+    
     }
+
+    .welcome h2{
+        font-size: 24px;
+    }
+
     .experience {
         height: auto;
         padding-top: 100px;
