@@ -541,13 +541,6 @@ li{
 }
 
 @media all and (max-width: 720px) {
-
-    .welcome {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
     .experience {
         height: auto;
         padding-top: 100px;
@@ -664,8 +657,7 @@ li{
 
 @media all and (max-width:500px) {
     .welcome{
-        margin-left:auto;
-        margin-right:auto;
+       width:100%;
     }
     .article {
         background-position: -250px 0px;
