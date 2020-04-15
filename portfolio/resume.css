@@ -559,7 +559,7 @@ li{
     height: 1000px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto 1000px;
+    background-size: auto 100%;
     background-position:center;
     line-height: 28px;
 }
