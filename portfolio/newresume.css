@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(219, 219, 219)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccb071;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ac7027;
+}
+
+.intro{
+    width:100%;
+    height:800px;
+    background-image: url("selfie .jpg");
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    }
+.welcome{
+    width:35%;
+    height:auto;
+    padding-top:2%;
+    padding-bottom:2%;
+    background-color:#ffe7b0;
+    border: 8px solid #e09f4b;
+    opacity: 90%;
+    position: relative;
+    left:60%;
+    top:30%;
+}
+h1{
+    width:70%;
+    font-family: "Noto Sans TC";
+    font-weight:500;
+    margin:0px auto;
+    text-align:center;
+    border-bottom:3px solid #ffa047;
+    padding-bottom: 1%;
+    font-size:32px;
+}
+h3{
+    font-family: "Noto Sans TC";
+    font-weight: 400;
+}
+h4{
+    font-family: "Noto Sans TC";
+    font-weight: 300;
+}
+p{
+    padding-top:30px;
+    width:80%;
+    margin:0px auto;
+    font-family: "Noto Sans TC";
+    font-weight: 200;
+    font-size:15px;
+    line-height: 30px;
+    color:#000000;
+
+}
+.aboutme{
+    width:100%;
+    background-color: #fff6e0;
+    padding:10% 0px;
+}
+.aboutmeblock{
+    width:80%;
+    background-color: #fbfdf0;
+    margin:0 auto;
+    padding-top:3%;
+    padding-bottom:3%;
+    height:500px;
+}
+.aboutmeblock h1{
+    padding-top:1%;
+}
+.socialmedia{
+    width:100%;
+    background-color: #fff6e0;
+    padding:10% 0 10% 0 ;
+    display: flex;
+    justify-content: center;
+   }
+.insta{  
+   width:40%;
+}
+
+.wordblock{
+    width:40%;
+       
+}
+.journalist{
+    padding:10% 0 10% 0;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    background-color: #fff6e0;
+    }
+.worklist{
+    width:40%;
+    height:720px;
+}
+.forimg{
+    width:100%;
+    height:240px;
+    overflow:hidden;
+}
+.forimg img{
+    width:100%;
+    }
+.forimg a{
+    height:100%;
+}
+#img1{
+    background-image: url("news(3).jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#img2{
+    background-image: url("doc.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#img3{
+    background-image: url("animalshelter.jpg");
+    background-size: cover;
+    background-position:center center;
+}
+.word{
+    border: 5px solid #e09f4b;
+    background-color: #ffe7b0;
+    opacity: 0;
+    width:100%; 
+    height:100%;
+}
+.word:hover{
+    opacity: 100;;
+}
+.word h1{
+    background-color: #ffe7b0;
+    position: relative;
+    text-align: right;
+    padding-bottom: 1%;
+    top:50%;
+    width:75%;
+    left:25%;
+    margin:0px;
+}
+.word h3{
+    background-color: #ffe7b0;
+    position: relative;
+    text-align: right;
+    font-size:21px;
+    top:50%;
+    left:25%;
+    width:75%;
+    margin:0px;
+}
+.ability{
+    width:100%;
+    background-color: #fff6e0;
+    height:auto;
+    padding:10% 0px;
+}
+.ability h1{
+    width:50%;
+}
+.abilitybox{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: space-around;
+    padding-top:30px;
+    }
+.abi{
+    width:25%;
+    height:auto;
+    padding:2%;
+    background-color: #ffe7b0;
+    text-align: center;
+}
+.abi div{
+    width:80%; 
+    height:auto; 
+    margin:20px auto 0px auto;
+}
+.abi div img{
+    width:50px; 
+    height:auto; 
+    float:left;
+}
+.abi div p{
+    float:none; 
+    padding-top:0px; 
+}
+.experience{
+    background-color: #ffe7b0;
+    width:100%;
+    height:1000px;
+    padding-top:10%;
+
+}
+.experience h1{
+    width:50%
+}
+.time{
+    width:48%;
+    height:auto;
+}
+
+.timeline {
+    width: 100vw;
+    height: calc(159/1000*100%);
+    top: calc(70/1000*100%);
+    position: relative;
+}
+
+.myline {
+    width: 80%;
+    height: 5px;
+    position: relative;
+    top: calc(55/159*100%);
+    background-color: #ffa047;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.spotflexbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+.mylinecolor {
+    width: 0%;
+    height: 5px;
+    position: relative;
+    top: 0;
+    background-color: rgb(163, 99, 3);
+    margin: 0;
+    z-index: 1;
+}
+
+.timeinfo {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -15px;
+    z-index: 6;
+}
+
+.timespot {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fbfdf0;
+    border-color:#ffa047;
+    border-width: 5px;
+    border-style: solid;
+    position: relative;
+}
+.timespot:hover{
+    background-color: orange;
+}
+
+.timeinfo h4 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bs-example {
+    height: calc(600/1000*100%);
+    position: relative;
+    top: calc(90/1000*100%);
+}
+
+.carousel {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.pbutton {
+    width: 50px;
+    height: 50px;
+    margin-top: 10%;
+    margin-left: 3%;
+    display: none;
+}
+
+.pbutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.nbutton {
+    width: 50px;
+    height: 50px;
+    margin-top: 10%;
+    margin-right: 3%;
+    display: none;
+}
+
+.nbutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    background: #fbfdf0;
+    text-align: center;
+    width: 80%;
+    height: calc(550/600*100%);
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: none;
+    font-family: "Noto Sans TC", sans-serif;
+    border: 5px solid #e09f4b;
+
+}
+
+.item h2 {
+    margin-top: 0px;
+}
+
+.infobar {
+    width: calc(600/800*100%);
+    height: 30%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    justify-content: space-between;
+    top: 10%;
+    margin-bottom: 30px;
+}
+
+.infobar img {
+    width: auto;
+    height: 100%;
+    display: block;
+    text-align: center;
+    ;
+}
+
+.infoword {
+    text-align: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infoword h3 {
+    color: slategray;
+    margin: 0px;
+}
+.item p {
+    padding-top: 10%;
+    width: 75%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.information {
+    width: 100%;
+    height: 100px;
+    background-color: #e09f4b;
+}
+
+.contactbar {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+}
+
+.contact {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:#ec8c16;
+}
+
+.contact a {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact a img {
+    width: 80%;
+    height: auto;
+    margin:8%;
+    
+
+}
+
+.contact:hover{
+    background-color: #ffe7b0;
+}
+
+@media all and (max-width:960px){
+    .intro{
+        background-size: auto 100%;
+    }
+    
+    .aboutmeblock{
+        height:auto;
+    }
+    
+    .forimg img{
+        height:120%;
+        width:auto;
+    }
+    
+    .word h3{
+        font-size:19px;
+    }
+    .abi div img{
+        float:none;
+    }
+
+}
+
+@media all and (max-width:768px){
+    .intro{ 
+    background-size:auto 100%;
+    }
+    .welcome{
+        width:80%;
+        left:0px;
+        top:40%;
+        margin:0px auto;
+    }
+    .journalist{
+        display: block;
+    }
+    .wordblock{
+        width:90%;
+        margin:0 auto;
+    }
+    .worklist{
+        width:50%;
+        margin:0px auto;
+    }
+
+    .forimg{
+    width:100%;
+    margin:5% auto;
+    height:30%;
+    }
+    .forimg img{
+        width:100%;
+        height:auto;
+    }
+
+    .socialmedia{
+        display:block;
+    }
+    .insta{
+        margin-top:5%;
+        width:100%;
+    }
+    
+    .experience {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .experience h1 {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+
+
+    .timeline,
+    .timeinfo,
+    .timeinfo h4 .timespot {
+        display: none;
+    }
+
+    .pbutton {
+        width: 50px;
+        height: 50px;
+        margin-top: 30%;
+        margin-right: 3%;
+        margin-left: 0;
+        display: block;
+    }
+
+    .nbutton {
+        width: 50px;
+        height: 50px;
+        margin-top: 30%;
+        margin-right: 0;
+        margin-left: 3%;
+        display:block;
+    }
+
+    .item {
+        height: 400px;
+        width: 100%;
+        padding: 5px;
+        scroll-behavior: smooth;
+        overflow: scroll;
+
+    }
+
+    .item p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .infoword h2{
+        font-size:28px;
+    }
+
+    .infoword h3{
+        font-size:20px;
+    }
+}
+@media all and (max-width:550px){
+    
+    h1{
+        font-size:28px;
+    }
+    p{
+        width:90%;
+    }
+    .intro{
+        background-position: center center;
+    }
+    
+    .journalist{
+        display: block;
+    }
+    .wordblock{
+        width:90%;
+        margin:0 auto;
+    }
+    .forimg img{
+        width:auto;
+        height:100%;
+    }
+    .word h1{
+        left:0px;
+        top:5%;
+        font-size:24px;
+        margin:0px auto;
+        text-align:center;
+    }
+    .word h3{
+        margin:0px auto;
+        padding-top:3%;
+        top:5%;
+        width:90%;
+        text-align: center;
+        left:0px;
+        font-size:16px;
+    }
+    .abilitybox{
+        display:block;
+    }
+    .abi{
+        width:80%;
+        margin:5% auto;
+    }
+    .abi div img{
+        width:50px; 
+        height:auto; 
+        float:left;
+    }
+    .abi div p{
+        float:none; 
+        padding-top:0px; 
+    }
+    .experience h1 {
+        width: 75%;
+    }
+
+    .bs-example {
+        height: auto;
+    }
+
+    .carousel-inner {
+        overflow: visible;
+    }
+    .infobar{
+        display:block;
+        height:auto;
+    }
+    .infobar img{
+        width:90%;
+        height:auto;
+        margin:0px auto;
+    }
+    .infobar h3{
+        font-size:18px;
+    }
+    .infobar h2{
+        font-size:22px;
+    }
+    .infoword{
+        width:90%;
+        display: block;
+        text-align: center;
+    }
+    .item p {
+        margin-top: 40px;
+        width: 85%;
+        font-size:14px;
+    }
+}
