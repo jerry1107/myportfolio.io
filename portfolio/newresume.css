@@ -63,8 +63,8 @@ p{
     margin:0px auto;
     font-family: "Noto Sans TC";
     font-weight: 200;
-    font-size:15px;
-    line-height: 30px;
+    font-size:16px;
+    line-height: 36px;
     color:#000000;
 
 }
@@ -453,9 +453,6 @@ p{
 }
 
 @media all and (max-width:768px){
-    .intro{ 
-    background-size:auto 100%;
-    }
     .welcome{
         width:80%;
         left:0px;
@@ -470,7 +467,7 @@ p{
         margin:0 auto;
     }
     .worklist{
-        width:50%;
+        width:80%;
         margin:0px auto;
     }
 
@@ -629,12 +626,13 @@ p{
         font-size:18px;
     }
     .infobar h2{
-        font-size:22px;
+        font-size:24px;
     }
     .infoword{
         width:90%;
         display: block;
         text-align: center;
+        margin:0px auto;
     }
     .item p {
         margin-top: 40px;
