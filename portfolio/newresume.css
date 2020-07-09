@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 ::-webkit-scrollbar {
@@ -22,10 +21,11 @@
     width:100%;
     height:800px;
     background-image: url("selfie .jpg");
+    background-size: 100% auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background-position: center;
+    background-size:cover;
     }
 .welcome{
     width:35%;
@@ -122,12 +122,24 @@ p{
 .forimg a{
     height:100%;
 }
+#img1{
+    background-image: url("news(3).jpg");
+    background-size: cover;
+}
+#img2{
+    background-image: url("doc.jpg");
+    background-size: cover;
+}
+#img3{
+    background-image: url("animalshelter.jpg");
+    background-size: cover;
+}
 .word{
     border: 5px solid #e09f4b;
     background-color: #ffe7b0;
     opacity: 0;
     width:40%; 
-    height:calc(240/667*100%);
+    height:calc(1/3*100%);
     position: absolute; 
     z-index: 1;
 }
@@ -454,20 +466,22 @@ p{
         margin:0 auto;
     }
     .worklist{
-        width:60%;
+        width:50%;
         margin:0px auto;
     }
 
     .forimg{
     width:100%;
     margin:5% auto;
+    height:30%;
     }
     .forimg img{
         width:100%;
         height:auto;
     }
     .word{
-        width:60%;
+        width:50%;
+        height:30%;
     }
 
     .socialmedia{
