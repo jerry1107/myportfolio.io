@@ -453,6 +453,17 @@ p{
 }
 
 @media all and (max-width:768px){
+    .intro{ 
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("selfie .jpg") center 0 no-repeat;
+    background-size: cover;
+    }
     .welcome{
         width:80%;
         left:0px;
