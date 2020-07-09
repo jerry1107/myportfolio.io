@@ -460,7 +460,7 @@ p{
     bottom: 0;
     left: 0;
     background: url("selfie .jpg") center 0 no-repeat;
-    background-size: cover;
+    background-size:auto 100%;
     }
     .welcome{
         width:80%;
