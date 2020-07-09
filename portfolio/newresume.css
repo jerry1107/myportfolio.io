@@ -127,7 +127,7 @@ p{
     background-color: #ffe7b0;
     opacity: 0;
     width:40%; 
-    height:calc(1/3*100%);
+    height:calc(240/667*100%);
     position: absolute; 
     z-index: 1;
 }
