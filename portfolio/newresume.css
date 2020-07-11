@@ -334,6 +334,8 @@ p{
     width: 80%;
     height: calc(550/600*100%);
     padding-bottom:2%;
+    scroll-behavior: smooth;
+    overflow: scroll;
     top: 0px;
     margin-left: auto;
     margin-right: auto;
