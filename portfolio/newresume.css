@@ -332,7 +332,8 @@ p{
     background: #fbfdf0;
     text-align: center;
     width: 80%;
-    height: calc(550/600*100%);
+    height: auto;
+    padding-bottom:2%;
     top: 0px;
     margin-left: auto;
     margin-right: auto;
